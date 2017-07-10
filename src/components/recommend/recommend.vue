@@ -32,10 +32,14 @@
       _getRecommend() {
         getRecommend().then((res) => {
           if (res.code === ERR_OK) {
-            this.recommends = res.data.recommends
+            console.log(res.data.slider)
+//            this.recommends = res.data.recommends
           }
         })
       }
+    },
+    components: {
+      Slider
     }
   }
 </script>
